@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h
+stddef.h
+-
+
+C:/Users/Admin/CLionProjects/course/libs/data_structures/unordered_array_set/unordered_array_set.c
+malloc.h
+-
+stdlib.h
+-
+unordered_array_set.h
+C:/Users/Admin/CLionProjects/course/libs/data_structures/unordered_array_set/unordered_array_set.h
+
+C:/Users/Admin/CLionProjects/course/libs/data_structures/unordered_array_set/unordered_array_set.h
+stdint.h
+-
+assert.h
+-
+memory.h
+-
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+../../algorithms/array/array.h
+C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h
+
