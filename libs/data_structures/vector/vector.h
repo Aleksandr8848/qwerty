@@ -10,6 +10,7 @@
 #include <memory.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <assert.h>
 typedef struct vector {
     int *data;
     size_t size;
@@ -33,4 +34,18 @@ void shrinkToFit(vector *v);
 // освобождает память, выделенную вектору.
 void deleteVector(vector *v);
 
+// проверяет является ли вектор пустым.
+bool isEmpty(vector *v);
+
+// проверяет является ли вектор полным.
+bool isFull(vector *v);
+
+// возвращает i-ый элемент вектора v.
+int getVectorValue(vector *v, size_t i);
+
+// добавляет элемент x в конец вектора v.
+void pushBack(vector *v, int x);
+
+// удаляет последний элемент из вектора.
+void popBack(vector *v);
 #endif //COURSE_VECTOR_H
