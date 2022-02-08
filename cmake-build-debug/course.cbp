@@ -179,6 +179,12 @@
 		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/data_structures/unordered_array_set/unordered_array_set.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/data_structures/vector/vector.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/data_structures/vector/vector.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/CLionProjects/course/main.c">
 			<Option target="course"/>
 		</Unit>

@@ -6,29 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h
-stddef.h
--
-
-C:/Users/Admin/CLionProjects/course/libs/data_structures/unordered_array_set/unordered_array_set.h
+C:/Users/Admin/CLionProjects/course/libs/data_structures/vector/vector.h
 stdint.h
--
-assert.h
--
-memory.h
--
-stdio.h
 -
 stdbool.h
 -
+memory.h
+-
 stdlib.h
 -
-../../algorithms/array/array.h
-C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h
+stdio.h
+-
 
 C:/Users/Admin/CLionProjects/course/main.c
-libs/algorithms/array/array.h
-C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h
-libs/data_structures/unordered_array_set/unordered_array_set.h
-C:/Users/Admin/CLionProjects/course/libs/data_structures/unordered_array_set/unordered_array_set.h
+stdio.h
+-
+stdint.h
+-
+libs/data_structures/vector/vector.h
+C:/Users/Admin/CLionProjects/course/libs/data_structures/vector/vector.h
 
