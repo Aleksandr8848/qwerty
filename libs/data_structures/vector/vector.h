@@ -1,7 +1,7 @@
 //
 // Created by Admin on 08.02.2022.
 //
-
+//
 #ifndef COURSE_VECTOR_H
 #define COURSE_VECTOR_H
 

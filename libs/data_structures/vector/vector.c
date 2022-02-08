@@ -1,7 +1,7 @@
 //
 // Created by Admin on 08.02.2022.
 //
-
+//
 #include "vector.h"
 
 void isBadAlloc(vector *v) {
