@@ -17,6 +17,8 @@ stdlib.h
 -
 stdio.h
 -
+assert.h
+-
 
 C:/Users/Admin/CLionProjects/course/main.c
 stdio.h
