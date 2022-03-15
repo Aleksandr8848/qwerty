@@ -160,6 +160,24 @@
 		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h">
 			<Option target="course"/>
 		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/algorithms/generating/generating.c">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/algorithms/generating/generating.h">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/sorts.c">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/sorts.h">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/time_test/time_test.c">
+			<Option target="algorithms"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/time_test/time_test.h">
+			<Option target="algorithms"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/CLionProjects/course/libs/data_structures/bitset/bitset.c">
 			<Option target="course"/>
 			<Option target="data_structures"/>

@@ -1,1 +1,1 @@
-add_library(algorithms algorithms.c array/array.c)
+add_library(algorithms algorithms.c array/array.c sorts/sorts.c sorts/sorts.h generating/generating.c generating/generating.h sorts/time_test/time_test.c sorts/time_test/time_test.h)

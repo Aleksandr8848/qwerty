@@ -6,17 +6,45 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.c
-stdio.h
+C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h
+stddef.h
+-
+stdbool.h
+-
+
+C:/Users/Admin/CLionProjects/course/libs/algorithms/generating/generating.h
+stdlib.h
+-
+time.h
 -
 limits.h
 -
-assert.h
+
+C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/sorts.h
+stdlib.h
 -
-array.h
+memory.h
+-
+stdbool.h
+-
+
+C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/time_test/time_test.c
+time_test.h
+C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/time_test/time_test.h
+../../generating/generating.h
+C:/Users/Admin/CLionProjects/course/libs/algorithms/generating/generating.h
+../sorts.h
+C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/sorts.h
+../../array/array.h
 C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h
 
-C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h
-stddef.h
+C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/time_test/time_test.h
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+time.h
 -
 

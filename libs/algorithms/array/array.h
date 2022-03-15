@@ -4,11 +4,11 @@
 
 //#ifndef COURSE_ARRAY_H
 //#define COURSE_ARRAY_H
-# ifndef INC_ARRAY_H
-# define INC_ARRAY_H
+#ifndef INC_ARRAY_H
+#define INC_ARRAY_H
 
-# include <stddef.h>
-
+#include <stddef.h>
+#include <stdbool.h>
 // ввод массива data размера n
 void inputArray_(int *a, size_t n);
 
@@ -68,6 +68,9 @@ int countIf_(const int *a, size_t n, int (*predicate )(int));
 // массива
 void deleteIf_(int *a, size_t *n, int (*deletePredicate )(int));
 
+void getPrefixSums(int *a, size_t size);
+
+bool isOrdered(const int *a, const size_t n);
 #endif
 
 

@@ -1,2 +1,2 @@
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe qc libalgorithms.a CMakeFiles/algorithms.dir/algorithms.c.obj CMakeFiles/algorithms.dir/array/array.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe qc libalgorithms.a CMakeFiles/algorithms.dir/algorithms.c.obj CMakeFiles/algorithms.dir/array/array.c.obj CMakeFiles/algorithms.dir/sorts/sorts.c.obj CMakeFiles/algorithms.dir/generating/generating.c.obj CMakeFiles/algorithms.dir/sorts/time_test/time_test.c.obj
 C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ranlib.exe libalgorithms.a

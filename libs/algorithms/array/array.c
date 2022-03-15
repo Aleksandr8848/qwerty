@@ -131,3 +131,18 @@ size_t binarySearchMoreOrEqual_(const int *a, size_t n, int x) {
     }
     return right;
 }
+void getPrefixSums(int *a, size_t size) {
+    int prev = a[0];
+    *a = 0;
+    for (int i = 1; i < size; i++) {
+        int t = a[i];
+        a[i] = prev + a[i - 1];
+        prev = t;
+    }
+}
+bool isOrdered(const int *a, const size_t n) {
+    for (size_t i = 1; i < n; ++i)
+        if (a[i - 1] > a[i])
+            return false;
+    return true;
+}

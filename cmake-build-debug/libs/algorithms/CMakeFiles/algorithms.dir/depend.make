@@ -7,3 +7,15 @@ libs/algorithms/CMakeFiles/algorithms.dir/algorithms.c.obj: \
 libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.obj: \
  ../libs/algorithms/array/array.c \
  ../libs/algorithms/array/array.h
+libs/algorithms/CMakeFiles/algorithms.dir/generating/generating.c.obj: \
+ ../libs/algorithms/generating/generating.c \
+ ../libs/algorithms/generating/generating.h
+libs/algorithms/CMakeFiles/algorithms.dir/sorts/sorts.c.obj: \
+ ../libs/algorithms/sorts/sorts.c \
+ ../libs/algorithms/sorts/sorts.h
+libs/algorithms/CMakeFiles/algorithms.dir/sorts/time_test/time_test.c.obj: \
+ ../libs/algorithms/array/array.h \
+ ../libs/algorithms/generating/generating.h \
+ ../libs/algorithms/sorts/sorts.h \
+ ../libs/algorithms/sorts/time_test/time_test.c \
+ ../libs/algorithms/sorts/time_test/time_test.h

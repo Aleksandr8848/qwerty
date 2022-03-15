@@ -7,3 +7,15 @@ libs/algorithms/CMakeFiles/algorithms.dir/algorithms.c.obj
 libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.obj
  C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.c
  C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h
+libs/algorithms/CMakeFiles/algorithms.dir/generating/generating.c.obj
+ C:/Users/Admin/CLionProjects/course/libs/algorithms/generating/generating.c
+ C:/Users/Admin/CLionProjects/course/libs/algorithms/generating/generating.h
+libs/algorithms/CMakeFiles/algorithms.dir/sorts/sorts.c.obj
+ C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/sorts.c
+ C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/sorts.h
+libs/algorithms/CMakeFiles/algorithms.dir/sorts/time_test/time_test.c.obj
+ C:/Users/Admin/CLionProjects/course/libs/algorithms/array/array.h
+ C:/Users/Admin/CLionProjects/course/libs/algorithms/generating/generating.h
+ C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/sorts.h
+ C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/time_test/time_test.c
+ C:/Users/Admin/CLionProjects/course/libs/algorithms/sorts/time_test/time_test.h
