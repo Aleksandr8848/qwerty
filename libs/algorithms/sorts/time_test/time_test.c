@@ -8,45 +8,39 @@
 #include "../../array/array.h"
 
 
-void checkTime(void (*sortFunc )(int *, size_t),
-               void (*generateFunc )(int *, size_t),
+void checkTime(void (*sortFunc)(int *, size_t),
+               void (*generateFunc)(int *, size_t),
                size_t size, char *experimentName) {
     static size_t runCounter = 1;
 
-// генерация последовательности
-    static int innerBuffer[100000];
+    int innerBuffer[100000];
     generateFunc(innerBuffer, size);
-    printf("Run #%zu| ", runCounter++);
-    printf("Name : %s\n", experimentName);
+    printf(" Run #%d| ", ++runCounter);
+    printf(" Name: %s\n", experimentName);
 
-    // замер времени
     double time;
     TIME_TEST({
                   sortFunc(innerBuffer, size);
-              }, time)
+              }, time);
 
-// результаты замера
     printf("Status: ");
     if (isOrdered(innerBuffer, size)) {
-        printf("OK! Time : %.3f\n", time);
+        printf("OK! Time: %.3f\n", time);
 
-// запись в файл
         char filename[256];
-        sprintf(filename,
-                "./data/%s.csv", experimentName);
+        sprintf(filename, "./data/%s.csv", experimentName);
         FILE *f = fopen(filename, "a");
-        if (f == NULL) {
+        if (NULL == f) {
             printf("FileOpenError %s", filename);
             exit(1);
         }
-        fprintf(f,
-                "%zu; %.3f\n", size, time);
+        fprintf(f, "%d; %.3f\n", size, time);
         fclose(f);
     } else {
         printf("Wrong!\n");
 
-// вывод массива, который не смог быть отсортирован
         outputArray_(innerBuffer, size);
+
         exit(1);
     }
 }
@@ -59,17 +53,17 @@ void timeExperiment() {
             {insertionSort, "insertionSort"},
             {combSort,      "combSort"},
             {shellSort,     "shellSort"},
-            {LSD_sort,     "LSD_sort"},
-            {stdlibQsort,  "stdLibQsort"}
+            {LSD_sort,      "LSD_sort"},
+            {stdlibQsort,   "stdLibQsort"}
     };
     const unsigned FUNCS_N = ARRAY_SIZE (sorts);
 
     // описание функций генерации
     GeneratingFunc generatingFuncs[] = {
             // генерируется случайный массив
-            {generateRandomArray,      "random"},
+            {generateRandomArray,           "random"},
             // генерируется массив 0, 1, 2, ..., n - 1
-            {generateOrderedArray,     "ordered"},
+            {generateOrderedArray,          "ordered"},
             // генерируется массив n - 1, n - 2, ..., 0
             {generateOrderedBackwardsArray, "orderedBackwards"}
     };
@@ -95,14 +89,14 @@ void timeExperiment() {
 }
 
 void checkCompares(long long (*sortFunc )(int *, size_t),
-                 void (*generateFunc )(int *, size_t),
-                 size_t size, char *experimentName) {
+                   void (*generateFunc )(int *, size_t),
+                   size_t size, char *experimentName) {
     static size_t runCounter = 1;
 
 // генерация последовательности
     static int innerBuffer[100000];
     generateFunc(innerBuffer, size);
-    printf("Run #%zu| ", runCounter++);
+    printf("Run #%d| ", ++runCounter);
     printf("Name : %s\n", experimentName);
 
     // замер времени
@@ -122,7 +116,7 @@ void checkCompares(long long (*sortFunc )(int *, size_t),
             printf("FileOpenError %s", filename);
             exit(1);
         }
-        fprintf(f, "%zu; %lld\n", size, nComps);
+        fprintf(f, "%d; %lld\n", size, nComps);
         fclose(f);
     } else {
         printf("Wrong!\n");
@@ -141,16 +135,16 @@ void comparesExperiment() {
             {getInsertionSortComps, "insertionSort"},
             {getCombSortComps,      "combSort"},
             {getShellSortComps,     "shellSort"},
-            {getLSD_sortComps,     "LSD_sort"},
+            {getLSD_sortComps,      "LSD_sort"},
     };
     const unsigned FUNCS_N = ARRAY_SIZE (sorts);
 
     // описание функций генерации
     GeneratingFunc generatingFuncs[] = {
             // генерируется случайный массив
-            {generateRandomArray,      "random"},
+            {generateRandomArray,           "random"},
             // генерируется массив 0, 1, 2, ..., n - 1
-            {generateOrderedArray,     "ordered"},
+            {generateOrderedArray,          "ordered"},
             // генерируется массив n - 1, n - 2, ..., 0
             {generateOrderedBackwardsArray, "orderedBackWardsArray"}
     };
@@ -167,8 +161,8 @@ void comparesExperiment() {
                 sprintf(filename, "%s_%s_comps",
                         sorts[i].name, generatingFuncs[j].name);
                 checkCompares(sorts[i].sort,
-                            generatingFuncs[j].generate,
-                            size, filename);
+                              generatingFuncs[j].generate,
+                              size, filename);
             }
         }
         printf("\n");

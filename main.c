@@ -6,7 +6,7 @@
 int main() {
 
     timeExperiment();
-//    comparesExperiment();
+    comparesExperiment();
 
     return 0;
 }
